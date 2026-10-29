@@ -1,0 +1,38 @@
+#include <gui/model/Model.hpp>
+#include <gui/model/ModelListener.hpp>
+
+#ifndef SIMULATOR
+#include "main.h"
+#endif
+Model::Model() : modelListener(0), buttonState(false)
+{
+
+}
+
+void Model::tick()
+{
+
+	//****************** Step 1******************************
+	// if simulation is not going then only perform these operation
+	// Created the main operation of button pressed state in this file
+	// Stored the button pressed state in "buttonState" variable.
+	// & created a function named setLight() which is parsed via modelLister pointer
+	// main.h header is added to access the HAL library
+
+	// ************* for  Step 2 *********************
+	// go to "Model.hpp" to add the "buttonState" variable
+
+#ifndef SIMULATOR
+
+	if(HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13)){
+		buttonState = true;
+		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_2, GPIO_PIN_RESET);
+	}
+	else{
+		buttonState = false;
+		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_2, GPIO_PIN_SET);
+	}
+
+	modelListener -> setLight(buttonState);
+#endif
+}

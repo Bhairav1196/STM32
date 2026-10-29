@@ -1,0 +1,88 @@
+!SESSION 2026-10-18 19:55:47.260 -----------------------------------------------
+eclipse.buildId=Version 2.2.0
+java.version=21.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-10-18 19:56:50.033
+!MESSAGE Log4j2 initialized with config file D:\Bhairav\Learning\STM32\STM32G491RE\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-10-18 19:56:59.626
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-10-18 19:57:30.287
+!MESSAGE Executed PowerShell command powershell.exe -Command "Get-CimInstance -ClassName Win32_SerialPort | Select-Object -ExpandProperty DeviceID":
+COM3
+COM4
+COM5
+
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-10-18 19:57:30.288
+!MESSAGE port: COM3
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-10-18 19:57:30.288
+!MESSAGE port: COM4
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-10-18 19:57:30.288
+!MESSAGE port: COM5
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-10-18 19:57:52.415
+!MESSAGE Indexed 'debugTest' (24 sources, 118 headers) in 5.16 sec: 10,892 declarations; 46,554 references; 3 unresolved inclusions; 46 syntax errors; 169 unresolved names (0.29%)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-10-18 20:02:41.425
+!MESSAGE Error in final launch sequence:
+
+Setup exceptions
+!STACK 1
+org.eclipse.core.runtime.CoreException: Setup exceptions
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:254)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:111)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:99)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:337)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:778)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:689)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1052)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1254)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 com.st.stm32cube.ide.mcu.debug.launch 4 0 2026-10-18 20:02:41.426
+!MESSAGE Setup exceptions
+!SESSION 2026-10-18 20:47:49.797 -----------------------------------------------
+eclipse.buildId=Version 2.2.0
+java.version=21.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  D:\Bhairav\Learning\STM32\STM32G491RE\testDebugSelf\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 D:\Bhairav\Learning\STM32\STM32G491RE\testDebugSelf\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-10-18 20:48:09.750
+!MESSAGE Log4j2 initialized with config file D:\Bhairav\Learning\STM32\STM32G491RE\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-10-18 20:48:18.524
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-10-18 20:48:25.180
+!MESSAGE Indexed 'testDebugSelf' (20 sources, 138 headers) in 4.88 sec: 11,532 declarations; 39,931 references; 7 unresolved inclusions; 77 syntax errors; 1,168 unresolved names (2.2%)
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-10-18 20:48:31.821
+!MESSAGE Executed PowerShell command powershell.exe -Command "Get-CimInstance -ClassName Win32_SerialPort | Select-Object -ExpandProperty DeviceID":
+COM3
+COM4
+COM5
+
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-10-18 20:48:31.822
+!MESSAGE port: COM3
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-10-18 20:48:31.822
+!MESSAGE port: COM4
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-10-18 20:48:31.822
+!MESSAGE port: COM5
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-10-18 20:58:49.690
+!MESSAGE Indexed 'testDebugSelf' (21 sources, 114 headers) in 4.46 sec: 10,564 declarations; 44,696 references; 3 unresolved inclusions; 46 syntax errors; 169 unresolved names (0.3%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-10-18 21:19:58.679
+!MESSAGE Indexed 'testDebugSelf' (21 sources, 114 headers) in 1.31 sec: 10,565 declarations; 44,761 references; 3 unresolved inclusions; 46 syntax errors; 169 unresolved names (0.3%)

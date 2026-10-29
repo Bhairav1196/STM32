@@ -1,0 +1,17 @@
+20:00:53 **** Incremental Build of configuration Debug for project MVP_2_freeRTOS ****
+make -j8 all 
+arm-none-eabi-g++ "D:/Bhairav/Learning/STM32/TOUCHGFX/STM32U5G9J-DK2/MVP_2_freeRTOS/TouchGFX/gui/src/screen1_screen/Screen1View.cpp" -mcpu=cortex-m33 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32U5G9xx -DUSE_BPP=16 -c -I../../Core/Inc -I../../TouchGFX/App -I../../TouchGFX/target/generated -I../../TouchGFX/target -I../../Drivers/STM32U5xx_HAL_Driver/Inc -I../../Drivers/STM32U5xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32U5xx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/Third_Party/FreeRTOS/Source/include/ -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/ -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/ -I../../Middlewares/Third_Party/CMSIS/RTOS2/Include/ -I../../Drivers/BSP -I../../Middlewares/ST/touchgfx/framework/include -I../../TouchGFX/generated/fonts/include -I../../TouchGFX/generated/gui_generated/include -I../../TouchGFX/generated/images/include -I../../TouchGFX/generated/texts/include -I../../TouchGFX/generated/videos/include -I../../TouchGFX/gui/include -I../../Utilities/JPEG -I../../Middlewares/ST/touchgfx_components/gpu2d/NemaGFX/include -I../../Middlewares/ST/touchgfx_components/gpu2d/TouchGFXNema/include -Os -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -femit-class-debug-always -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Application/User/gui/Screen1View.d" -MT"Application/User/gui/Screen1View.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Application/User/gui/Screen1View.o"
+arm-none-eabi-g++ -o "MVP_2_freeRTOS.elf" @"objects.list"  -l:libtouchgfx-float-abi-hard.a -l:libnemagfx-float-abi-hard.a -l:libtouchgfxnema-float-abi-hard.a -mcpu=cortex-m33 -T"D:\Bhairav\Learning\STM32\TOUCHGFX\STM32U5G9J-DK2\MVP_2_freeRTOS\STM32U5G9xx_FLASH.ld" --specs=nosys.specs -Wl,-Map="MVP_2_freeRTOS.map" -Wl,--gc-sections -static -L../../Middlewares/ST/touchgfx/lib/core/cortex_m33/gcc -L../../Middlewares/ST/touchgfx_components/gpu2d/NemaGFX/lib/core/cortex_m33/gcc -L../../Middlewares/ST/touchgfx_components/gpu2d/TouchGFXNema/lib/cortex_m33/gcc --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: MVP_2_freeRTOS.elf
+ 
+arm-none-eabi-size  MVP_2_freeRTOS.elf 
+arm-none-eabi-objdump -h -S MVP_2_freeRTOS.elf  > "MVP_2_freeRTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+4273156	    804	2090300	6364260	 611c64	MVP_2_freeRTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: MVP_2_freeRTOS.list
+ 
+
+20:00:57 Build Finished. 0 errors, 0 warnings. (took 4s.60ms)
+

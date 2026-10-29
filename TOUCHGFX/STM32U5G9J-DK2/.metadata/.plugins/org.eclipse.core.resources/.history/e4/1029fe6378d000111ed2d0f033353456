@@ -1,0 +1,26 @@
+#include <gui/mainscreen_screen/MainScreenView.hpp>
+#include <gui/mainscreen_screen/MainScreenPresenter.hpp>
+
+MainScreenPresenter::MainScreenPresenter(MainScreenView& v)
+    : view(v)
+{
+
+}
+
+void MainScreenPresenter::activate()
+{
+
+}
+
+void MainScreenPresenter::deactivate()
+{
+
+}
+
+
+//************** Step 4*******************
+
+// added following function and called "view"
+void MainScreenPresenter::setLight(bool state){
+	view.setLight(state);
+}
