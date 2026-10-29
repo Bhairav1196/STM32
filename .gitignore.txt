@@ -1,0 +1,91 @@
+# =========================================================================
+# Standard .gitignore Template for Embedded C/C++ Development
+# =========================================================================
+
+# --- Compiled Artifacts and Object Files ---
+*.o
+*.obj
+*.d
+*.crf
+*.lst
+*.map
+*.hex
+*.bin
+*.elf
+*.axf
+*.out
+*.srec
+*.symbols
+
+# --- Static Libraries and Archives ---
+*.a
+*.lib
+
+# --- Build & Output Directories ---
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+[Oo]bj/
+[Oo]ut/
+[Bc]kp/
+_gnu_build/
+
+# --- Toolchain & IDE Specific Files ---
+
+# Keil uVision
+*.uvopt
+*.uvoptx
+*.uvgui.*
+*.uv2
+^*.uvmpw
+JLinkLog.txt
+*.pco
+*.Bak
+*.dep
+*.iex
+*.lnp
+*.mpf
+*.mpf-bak
+*.h8s
+*.tds
+
+# IAR Embedded Workbench
+*.dep
+*.ewd
+*.ewp.X*
+*.ENU
+*.wsp
+*.iarinfo
+settings/
+Flash/
+
+# STM32CubeIDE / Eclipse
+.settings/
+.project
+.cproject
+.autotools
+.targets
+*.launch
+
+# MPLAB X IDE
+nbproject/private/
+build/
+dist/
+
+# VS Code (if used for editing/building)
+.vscode/
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# --- Operating System Artifacts ---
+.DS_Store
+Thumbs.db
+EHthumbs.db
+
+# --- Miscellaneous / Backup Files ---
+*~
+*.bak
+*.swp
+*.tmp
+*.log
